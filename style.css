@@ -1,0 +1,146 @@
+/* Change everything to your own style if you want to! */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+html {
+    background-color: #1F2833;
+    font-size: 20px;
+    font-family: 'Roboto', 'monospace';
+    color: white; 
+}
+
+div {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    width: 100vw; 
+}
+
+form {
+    border: solid 3px white;
+    background-color: #192029;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 450px;
+}
+
+input {
+    text-align: center;
+    padding: 5px; 
+    border-radius: 10px;
+    font-size: .8rem;
+    transition: linear .3s;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; 
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input:hover {
+    padding: 7px;
+}
+
+button {
+    width: 150px;
+    margin: 10px;
+    padding: 7px;
+    color:  #66FCF1; 
+    background-color:  #192029;
+    border: 3px solid #66FCF1; 
+    border-radius: 10px;
+    transition: linear .3s;
+    font-size: .8rem; 
+}
+
+button:hover {
+    color: white; 
+    border: white solid 3px; 
+    background-color: #1F2833;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem; 
+    color: white; 
+    margin: 10px; 
+}
+
+a, h2 {
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+a span {
+    color: #66FCF1; 
+    text-decoration: underline;
+    transition: linear .3s; 
+}
+
+a span:hover {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px; 
+    border: 3px solid red;
+    color: red;
+}
+
+h3 {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px; 
+    border: 3px solid rgb(12, 180, 12);
+    color: rgb(12, 180, 12);
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+}
+
+@media only screen and (max-width: 400px){
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 250px;
+    }
+
+    p {
+        font-size: .8rem;
+        width: 225px;
+    }
+}
