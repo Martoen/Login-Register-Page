@@ -1,6 +1,6 @@
-Login & Register System
+Login & Signup System
 
-This system contains a login, register and an index page. 
+This system contains a login, signup and an index page. 
 It has a database connection that is setup for localhost, but you can change that easily. 
 It also comes with a SQL file which you can import into your own database easily. 
 
