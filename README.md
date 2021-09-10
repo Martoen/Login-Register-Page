@@ -8,3 +8,5 @@ The system is protected against SQL injections, because I used prepared statemen
 
 You are free to use this and change it if you want to. 
 If you find any problems, please let me know! 
+
+![alt text](https://i.imgur.com/4zlQ4tH.png)
