@@ -60,9 +60,8 @@ function uidExists($conn, $uid, $email) {
         if ($row = mysqli_fetch_assoc($resultData)) {
             return $row; 
         }
-        else {
-            $result = false; 
-            return $result; 
+        else { 
+            return false; 
         }
 
         mysqli_stmt_close($stmt);
