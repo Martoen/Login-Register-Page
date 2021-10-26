@@ -3,8 +3,8 @@ if (isset($_POST['submit'])) {
     require_once 'database.php';
     require_once 'functions.php';
 
-    $username = mysqli_real_escape_string($conn, $_POST['uid']);  
-    $pwd = mysqli_real_escape_string($conn, $_POST['password']); 
+    $username = $_POST['uid'];  
+    $pwd = $_POST['password']; 
 
     if (emptyInputLogin($username, $pwd) !== false) {
         header("location: ../login.php?error=emptyinput");
@@ -13,6 +13,6 @@ if (isset($_POST['submit'])) {
 
     loginUser($conn, $username, $pwd);
 } else {
-    header("Location: ../login.php?erorr=loginerror");
+    header("Location: ../login.php?error=loginerror");
     exit(); 
 }
