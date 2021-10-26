@@ -1,5 +1,5 @@
-<?php
-    session_start();
+<?php 
+    require_once('required/database.php');
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +25,11 @@
         <ul>
             <li><a href="login.php"><button>Login Page</button></a></li>
             <li><a href="signup.php"><button>Signup Page</button></a><li>
+            <?php
+            if (isset($_SESSION["useruid"])) {
+                echo "<li><a href='logout.php'><button>Logout</button></a><li>";
+            }
+            ?>
         </ul>
     </div>
 </body>
