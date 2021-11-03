@@ -1,4 +1,4 @@
-Login & Signup System
+# Login & Signup System
 
 This system contains a login, signup and an index page. 
 It has a database connection that is setup for localhost, but you can change that easily. 
